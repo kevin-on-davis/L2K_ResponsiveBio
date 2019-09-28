@@ -18,46 +18,39 @@
                     font-size: 5vw;               
                 }
 
-                #about_me{
-                    .col-sm-7{
-                        z-index: inherit 3;;
-                    }
-                }
-
-                #my_portfolio{
-                    .col-sm-7{
-                        z-index:2;
-                    }
-                }
-                .col-md-7{
-                    position:absolute;
+                /* .col-md-7{
+                    position:relative;
                     bottom: 0;
                     right: 0;
-                }    
+                } */
+                
+                #bio_frame{
+                    margin: 0 auto;
+                    border-style: none;
+                }
+                
         </style>
     </head>
 
     <body>
         <div class="container-fluid">
             <div class="jumbotron col" style="border:black; border-style:double; border-width: 5px; background:white">
-                <nav class="navbar navbar-expand-md navbar-light .d-flex justify-content-between nav">
-                        <!-- <div class="col .d-flex justify-content-between nav"> -->
-                                <a class="navbar-brand col-sm-4" href="#">Kevin Davis</a>
-                                <div class=col-sm-5></div>
-                                <div class="collapse navbar-collapse col-sm-9" id="navbarSupportedContent">
-                                    <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#" target="about_me">About <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#" target="my_portfolio">Portfolio</a>
-                                        </li>
-                                        <li class="nav-item">
-                                                <a class="nav-link" href="#">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                        <!-- </div> -->
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand col-sm-4" href="#">Kevin Davis</a>
+                    <div class=col-sm-5></div>
+                    <div class="collapse navbar-collapse col-sm-9" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="myBio.html" target="bio_tab_frame">About <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html" target="bio_tab_frame">Portfolio <span class="sr-only">(current)</span></a>
+                                </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="contact.html" target="bio_tab_frame">Contact <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
 
@@ -66,60 +59,14 @@
                     <img class="rounded border border-dark" src="assets/KevinDavis.jpg" height="600px" data-holder-rendered="true">
                 </div>
 
-                <!-- <div class="col-sm-1">
-                </div> -->
-
                 <!--7 Column Cards stacked and shuffled to display content-->
                 <div class="row" id="page_frame">
                     <div id="about_me" class="col-md-7">
                         <div class="card mt-2"  style="position:relative; top:0">
-                            <div class="card-body" style="overflow:scroll; width:600; height:600px; background:white; padding-top: 0">
-                                <div style="position:sticky; top:0; color:black;background:white; height:50px">
-                                    <h5 class="card-title">About Me</h5>
-                                    <hr/>
-                                </div>
-                                <p class="card-text">
-                                        IT professional with extensive experience in Oracle technology and strengths in PL/SQL and SQL development, GUI development utilizing Oracle Application Express, Oracle Forms and Reports. Created complete end-to-end Oracle Apex commercial solution to replace obsolete application as well as modernizing business practices using a variety of tools. Experienced in design, development and implementation of solutions to solve complex challenges. Worked in a range of industries including education, HR, education, energy, shipping and manufacturing. Possess excellent writing, research and problem-solving skills in both functional and technical areas, demonstrated through the delivery of various projects as part of development teams, on solo and remote projects. 
-                                        <hr/>
-                                        IT professional with extensive experience in Oracle technology and strengths in PL/SQL and SQL development, GUI development utilizing Oracle Application Express, Oracle Forms and Reports. Created complete end-to-end Oracle Apex commercial solution to replace obsolete application as well as modernizing business practices using a variety of tools. Experienced in design, development and implementation of solutions to solve complex challenges. Worked in a range of industries including education, HR, education, energy, shipping and manufacturing. Possess excellent writing, research and problem-solving skills in both functional and technical areas, demonstrated through the delivery of various projects as part of development teams, on solo and remote projects. 
-                                        <hr/>
-                                        IT professional with extensive experience in Oracle technology and strengths in PL/SQL and SQL development, GUI development utilizing Oracle Application Express, Oracle Forms and Reports. Created complete end-to-end Oracle Apex commercial solution to replace obsolete application as well as modernizing business practices using a variety of tools. Experienced in design, development and implementation of solutions to solve complex challenges. Worked in a range of industries including education, HR, education, energy, shipping and manufacturing. Possess excellent writing, research and problem-solving skills in both functional and technical areas, demonstrated through the delivery of various projects as part of development teams, on solo and remote projects. 
-                                        <hr/>
-                                        IT professional with extensive experience in Oracle technology and strengths in PL/SQL and SQL development, GUI development utilizing Oracle Application Express, Oracle Forms and Reports. Created complete end-to-end Oracle Apex commercial solution to replace obsolete application as well as modernizing business practices using a variety of tools. Experienced in design, development and implementation of solutions to solve complex challenges. Worked in a range of industries including education, HR, education, energy, shipping and manufacturing. Possess excellent writing, research and problem-solving skills in both functional and technical areas, demonstrated through the delivery of various projects as part of development teams, on solo and remote projects. 
-                                        <hr/>
-                                        IT professional with extensive experience in Oracle technology and strengths in PL/SQL and SQL development, GUI development utilizing Oracle Application Express, Oracle Forms and Reports. Created complete end-to-end Oracle Apex commercial solution to replace obsolete application as well as modernizing business practices using a variety of tools. Experienced in design, development and implementation of solutions to solve complex challenges. Worked in a range of industries including education, HR, education, energy, shipping and manufacturing. Possess excellent writing, research and problem-solving skills in both functional and technical areas, demonstrated through the delivery of various projects as part of development teams, on solo and remote projects. 
-                                        <hr/>
-                                        IT professional with extensive experience in Oracle technology and strengths in PL/SQL and SQL development, GUI development utilizing Oracle Application Express, Oracle Forms and Reports. Created complete end-to-end Oracle Apex commercial solution to replace obsolete application as well as modernizing business practices using a variety of tools. Experienced in design, development and implementation of solutions to solve complex challenges. Worked in a range of industries including education, HR, education, energy, shipping and manufacturing. Possess excellent writing, research and problem-solving skills in both functional and technical areas, demonstrated through the delivery of various projects as part of development teams, on solo and remote projects. 
-                                        <hr/>
-                                        IT professional with extensive experience in Oracle technology and strengths in PL/SQL and SQL development, GUI development utilizing Oracle Application Express, Oracle Forms and Reports. Created complete end-to-end Oracle Apex commercial solution to replace obsolete application as well as modernizing business practices using a variety of tools. Experienced in design, development and implementation of solutions to solve complex challenges. Worked in a range of industries including education, HR, education, energy, shipping and manufacturing. Possess excellent writing, research and problem-solving skills in both functional and technical areas, demonstrated through the delivery of various projects as part of development teams, on solo and remote projects. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="my_portfolio" class="col-md-7">
-                        <div class="card mt-2"  style="position:relative; top:0">
-                            <div class="card-body" style="overflow:scroll; width:600; height:600px; background:white; padding-top: 0">
-                                <div style="position:sticky; top:0; color:black;background:white; height:50px">
-                                    <h5 class="card-title">Portfolio</h5>
-                                    <hr/>
-                                </div>
-                                <p class="card-text">
-                                        <div class="pallette">
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/Spok_star_treck_movie_geek-512.png" width="25%"></a>
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/dragon.png" width="25%"></a>
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/tesla_car_wing_doors.png" width="25%"></a>
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/spider_logo.png" width="25%"></a>
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/KevinDavis.jpg" width="25%"></a>
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/KevinDavis.jpg" width="25%"></a>
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/Spok_star_treck_movie_geek-512.png" width="25%"></a>
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/KevinDavis.jpg" width="25%"></a>
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/KevinDavis.jpg" width="25%"></a>
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/Spok_star_treck_movie_geek-512.png" width="25%"></a>
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/KevinDavis.jpg" width="25%"></a>
-                                                <a href="#" class="app_icon" target="bio_tab_frame"><img id="profilepic" src="assets/KevinDavis.jpg" width="25%"></a>
-                                        </div>
-                                </p>
+                            <div class="card-body" style="width:900px; height:600px; border-style: none; background:white; padding-top: 0">
+                                <section id="middle">
+                                    <iframe id="bio_frame" name="bio_tab_frame" src="" height="600px" width="850px"></iframe>
+                                </section>
                             </div>
                         </div>
                     </div>
