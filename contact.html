@@ -1,25 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
+        <meta charset = "utf-8">
+        <meta name=“viewport” content=“width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+            
+        <style>
+ 
+                .navbar-brand{
+                    /* padding: 1vw; */
+                    margin-left: 1vw;
+                    justify-content:safe;
+                    color: white;
+                    background: green; 
+                    font-family:'Turret Road', 'Arial Narrow Bold', sans-serif;
+                    font-size: 3vw;               
+                }
+
+                #navbarSupportedContent{
+                    font-family:'Turret Road', 'Arial Narrow Bold', sans-serif;
+                    font-size: 2vw;               
+                }
+                
+        </style>
     </head>
 
     <body>
-        <div style="position:sticky; top:0; color:black;background:white;">
-                <h1>Contact</h1>
-                <hr/>
-        </div>
+        <div class="container-fluid">
+            <div class="jumbotron" style="border:black; border-style:double; border-width: 1vw; background:white">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand col-sm-4" href="index.html">Kevin Davis</a>
+                    <div class=col-sm-5></div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                                <a class="nav-link" href="index.html" target="_self">About <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html" target="_self">Portfolio <span class="sr-only">(current)</span></a>
+                                </li>
+                            <li class="nav-item">
+                                    <a class="nav-link disabled" href="contact.html" target="_self">Contact <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
 
-        <form>
-            Name:<br/>
-            <input type="text" name="person_name" placeholder="Enter full name"><br/><br/>
-            Email:<br/>
-            <input type="text" name="person_email" placeholder="Enter email address"><br/><br/>
-            Message:<br/>
-            <textarea name="message" rows="6" cols="100"></textarea><br/><br/>
-            <br/>
-            <input type="submit" name="save_button"><br/>
-        </form>
-        
+            <div class="row">
+                <div id="picture_col" class="row justify-content-center col-sm-5">
+                    <img class="rounded border border-dark" style="margin-left:3vw" src="assets/KevinDavis.jpg" width="100%" data-holder-rendered="true">
+                </div>
+
+                <!--7 Column Cards stacked and shuffled to display content-->
+                    <div id="my_contact" class="col-md-7" style="width:60vw">
+                        <div class="card"  style="position:relative; top:0; margin-left:3vw">
+                                <h5 class="card-title" style="position:sticky; top:0; margin-left: 1vw">Contact</h5>
+                                <div class="card-body" style="overflow: scroll; height:46vw; border-style: none; background:white">
+                                    <form>
+                                        Name:<br/>
+                                        <input type="text" name="person_name" placeholder="Enter full name"><br/><br/>
+                                        Email:<br/>
+                                        <input type="text" name="person_email" placeholder="Enter email address"><br/><br/>
+                                        Message:<br/>
+                                        <textarea name="message" rows="6" cols="100"></textarea><br/><br/>
+                                        <br/>
+                                        <input type="submit" name="save_button"><br/>
+                                    </form>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="border:black; border-style:double; border-width: 1vw; background:white; margin-top: 1vw">
+                    <h6>Copyright @</h6>
+                </div>
+            </div>
     </body>
+
 </html>
