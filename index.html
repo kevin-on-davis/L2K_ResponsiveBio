@@ -10,26 +10,21 @@
         <style>
  
                 .navbar-brand{
-                    padding: 20px;
-                    margin-left: 8px;
+                    margin-left: 1vw;
+                    justify-content:safe;
                     color: white;
                     background: green; 
                     font-family:'Turret Road', 'Arial Narrow Bold', sans-serif;
-                    font-size: 5vw;               
+                    font-size: 3vw;               
                 }
 
                 #navbarSupportedContent{
                     font-family:'Turret Road', 'Arial Narrow Bold', sans-serif;
                     font-size: 2vw;               
                 }
-                /* .col-md-7{
-                    position:relative;
-                    bottom: 0;
-                    right: 0;
-                } */
                 
                 #bio_frame{
-                    margin: 0 auto;
+                    /* margin: 0 auto; */
                     border-style: none;
                 }
                 
@@ -38,13 +33,13 @@
 
     <body>
         <div class="container-fluid">
-            <div class="jumbotron col" style="border:black; border-style:double; border-width: 5px; background:white">
+            <div class="jumbotron" style="border:black; border-style:double; border-width: 1vw; background:white">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand col-sm-4" href="index.html">Kevin Davis</a>
+                    <a class="navbar-brand col-sm-4" href="index2.html">Kevin Davis</a>
                     <div class=col-sm-5></div>
-                    <div class="collapse navbar-collapse col-sm-8" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
+                        <li class="nav-item">
                                 <a class="nav-link" href="myBio.html" target="bio_tab_frame">About <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
@@ -60,21 +55,25 @@
 
             <div class="row">
                 <div id="picture_col" class="row justify-content-center col-sm-5">
-                    <img class="rounded border border-dark" src="assets/KevinDavis.jpg" height="600vw" data-holder-rendered="true">
+                    <img class="rounded border border-dark" style="margin-left:3vw" src="assets/KevinDavis.jpg" width="100%" data-holder-rendered="true">
                 </div>
 
                 <!--7 Column Cards stacked and shuffled to display content-->
                 <div class="row" id="page_frame">
-                    <div id="about_me" class="col-md-7">
-                        <div class="card mt-2"  style="position:relative; top:0">
-                            <div class="card-body" style="width:900px; height:600px; border-style: none; background:white; padding-top: 0">
-                                <section id="middle">
-                                    <iframe id="bio_frame" name="bio_tab_frame" src="myBio.html" height="600vw" width="900vw"></iframe>
+                    <div id="about_me">
+                        <div class="card"  style="position:relative; top:0; margin-left:3vw">
+                            <div class="card-body" style="border-style: none; background:white; padding-top: 0">
+                                <section id="middle" style="width:45vw">
+                                    <iframe id="bio_frame" name="bio_tab_frame" style="height:46vw; width:46vw" src="myBio.html"></iframe>
                                 </section>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div style="border:black; border-style:double; border-width: 1vw; background:white; margin-top: 1vw">
+                <h6>Copyright @</h6>
             </div>
         </div>
     </body>
